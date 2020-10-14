@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-rows: minmax(200px, 20%) minmax(600px, 80%);
+}
+
+.column-list {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 15px;
+}
+
+.column {
+  border: solid 1px black;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+}
+
+.column > div {
+  margin: 10px 10px 10px 10px;
+}
+
+.add-column {
+  margin-left: 50px;
+  margin-top: 50px;
+}
